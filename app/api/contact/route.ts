@@ -16,7 +16,7 @@ export async function POST(request: NextRequest) {
 
     // Send email via Resend
     const { data, error } = await resend.emails.send({
-      from: "ACID Landing Page <onboarding@resend.dev>", // Update this with your verified domain
+      from: "ACID Landing Page <noreply@aciddrinks.com>",
       to: "drop@aciddrinks.com",
       subject: `Nieuwe aanvraag van ${naam}`,
       html: `
